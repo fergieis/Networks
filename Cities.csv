@@ -1,0 +1,206 @@
+City,City Population,State Population,State
+Birmingham,1143772,4833722,Alabama
+Huntsville,441086,4833722,Alabama
+Mobile,415123,4833722,Alabama
+Montgomery,373141,4833722,Alabama
+Anchorage,291826,735132,Alaska
+Fairbanks,31535,735132,Alaska
+Juneau,31275,735132,Alaska
+Sitka,8881,735132,Alaska
+Phoenix,1445632,6626624,Arizona
+Tucson,520116,6626624,Arizona
+Mesa,439041,6626624,Arizona
+Chandler,236123,6626624,Arizona
+Little Rock,193524,2959373,Arkansas
+Fort Smith,86209,2959373,Arkansas
+Fayetteville,76899,2959373,Arkansas
+Springdale,69797,2959373,Arkansas
+Los Angeles,3928864,38332521,California
+San Diego,1381069,38332521,California
+San Jose,1015785,38332521,California
+San Francisco,852469,38332521,California
+Fresno,515986,38332521,California
+Sacramento,485199,38332521,California
+Denver,663862,5268367,Colorado
+Colorado Springs,445830,5268367,Colorado
+Aurora,353108,5268367,Colorado
+Fort Collins,156480,5268367,Colorado
+Bridgeport,144229,3596080,Connecticut
+New Haven,129779,3596080,Connecticut
+Hartford,124775,3596080,Connecticut
+Stamford,122643,3596080,Connecticut
+Wilmington,71305,925749,Delaware
+Dover,36560,925749,Delaware
+Newark,31618,925749,Delaware
+Middletown,18995,925749,Delaware
+Jacksonville,842583,19552860,Florida
+Miami,408568,19552860,Florida
+Tampa,352957,19552860,Florida
+Orlando,255483,19552860,Florida
+St. Petersburg,249688,19552860,Florida
+Atlanta,456002,9992167,Georgia
+Columbus,200887,9992167,Georgia
+Augusta,196741,9992167,Georgia
+Macon,153691,9992167,Georgia
+Honolulu,337256,1404054,Hawaii
+East Honolulu,49914,1404054,Hawaii
+Pearl City,47698,1404054,Hawaii
+Hilo,43263,1404054,Hawaii
+Boise,214237,1612136,Idaho
+Meridian,85000,1612136,Idaho
+Nampa,81557,1612136,Idaho
+Idaho Falls,58292,1612136,Idaho
+Chicago,2695598,12882135,Illinois
+Aurora,197899,12882135,Illinois
+Rockford,152871,12882135,Illinois
+Joliet,147433,12882135,Illinois
+Indianapolis,848788,6570902,Indiana
+Fort Wayne,258522,6570902,Indiana
+Evansville,120346,6570902,Indiana
+South Bend,101190,6570902,Indiana
+Des Moines,209220,3090416,Iowa
+Cedar Rapids,129195,3090416,Iowa
+Davenport,102548,3090416,Iowa
+Sioux City,82517,3090416,Iowa
+Wichita,388143,2893957,Kansas
+Overland Park,184525,2893957,Kansas
+Kansas City,149636,2893957,Kansas
+Olathe,133062,2893957,Kansas
+Louisville,612780,4395295,Kentucky
+Lexington,310797,4395295,Kentucky
+Bowling Green,62479,4395295,Kentucky
+Owensboro,58374,4395295,Kentucky
+New Orleans,378715,4625470,Louisiana
+Baton Rouge,229426,4625470,Louisiana
+Shreveport,200327,4625470,Louisiana
+Metairie,138481,4625470,Louisiana
+Portland,66194,1328302,Maine
+Lewiston,36592,1328302,Maine
+Bangor,33039,1328302,Maine
+South Portland,25002,1328302,Maine
+Baltimore,620961,5928814,Maryland
+Columbia,99615,5928814,Maryland
+Germantown,86395,5928814,Maryland
+Silver Spring,71452,5928814,Maryland
+Boston,645966,6692824,Massachusetts
+Worcester,182544,6692824,Massachusetts
+Springfield,153703,6692824,Massachusetts
+Lowell,108861,6692824,Massachusetts
+Detroit,706585,9895622,Michigan
+Grand Rapids,189815,9895622,Michigan
+Warren,134243,9895622,Michigan
+Sterling Heights,129880,9895622,Michigan
+Minneapolis,407207,5420380,Minnesota
+Saint Paul,297640,5420380,Minnesota
+Rochester,111402,5420380,Minnesota
+Bloomington,86314,5420380,Minnesota
+Jackson,173514,2991207,Mississippi
+Gulfport,67793,2991207,Mississippi
+Southhaven,48982,2991207,Mississippi
+Hattiesburg,45989,2991207,Mississippi
+Kansas City,470800,6021988,Missouri
+St. Louis,317419,6021988,Missouri
+Springfield,165378,6021988,Missouri
+Independence,117494,6021988,Missouri
+Billings,108869,1015165,Montana
+Missoula,69821,1015165,Montana
+Great Falls,59152,1015165,Montana
+Bozeman,41660,1015165,Montana
+Omaha,434353,1868516,Nebraska
+Lincoln,268738,1868516,Nebraska
+Bellevue,53663,1868516,Nebraska
+Grand Island,50550,1868516,Nebraska
+Las Vegas,613599,2790136,Nevada
+Henderson,277440,2790136,Nevada
+Reno,236995,2790136,Nevada
+North Las Vegas,230788,2790136,Nevada
+Manchester,109565,1323459,New Hampshire
+Nashua,86494,1323459,New Hampshire
+Concord,42695,1323459,New Hampshire
+Derry,33109,1323459,New Hampshire
+Newark,277140,8899339,New Jersey
+Jersey City,247597,8899339,New Jersey
+Paterson,146199,8899339,New Jersey
+Elizabeth,124969,8899339,New Jersey
+Albuquerque,556495,2085287,New Mexico
+Las Cruces,101324,2085287,New Mexico
+Rio Ranchero,91956,2085287,New Mexico
+Santa Fe,69976,2085287,New Mexico
+New York City,8550405,19651127,New York
+Buffalo,261310,19651127,New York
+Rochester,210565,19651127,New York
+Yonkers,195976,19651127,New York
+Charlotte,809958,9848060,North Carolina
+Raleigh,439896,9848060,North Carolina
+Greensboro,282586,9848060,North Carolina
+Durham,251893,9848060,North Carolina
+Fargo,115863,723393,North Dakota
+Bismarck,68896,723393,North Dakota
+Grand Forks,56057,723393,North Dakota
+Minot,47997,723393,North Dakota
+Columbus,835957,11570808,Ohio
+Cleveland,389521,11570808,Ohio
+Cincinnati,298165,11570808,Ohio
+Toledo,281031,11570808,Ohio
+Oklahoma City,599199,3850568,Oklahoma
+Tulsa,393987,3850568,Oklahoma
+Norman,115562,3850568,Oklahoma
+Broken Arrow,102019,3850568,Oklahoma
+Portland,609456,3930065,Oregon
+Salem,160614,3930065,Oregon
+Eugene,159190,3930065,Oregon
+Gresham,109397,3930065,Oregon
+Philadelphia,1526006,12773801,Pennsylvania
+Pittsburgh,305704,12773801,Pennsylvania
+Allentown,118032,12773801,Pennsylvania
+Erie,101786,12773801,Pennsylvania
+Providence,178042,1051511,Rhode Island
+Warwick,82672,1051511,Rhode Island
+Cranston,80387,1051511,Rhode Island
+Pawtucket,71148,1051511,Rhode Island
+Columbia,132067,4774839,South Carolina
+Charleston,130113,4774839,South Carolina
+North Charleston,106749,4774839,South Carolina
+Mount Pleasant,77796,4774839,South Carolina
+Sioux Falls,168586,844877,South Dakota
+Rapid City,72638,844877,South Dakota
+Aberdeen,27800,844877,South Dakota
+Brookings,23225,844877,South Dakota
+Memphis,656861,6495978,Tennessee
+Nashville,644014,6495978,Tennessee
+Knoxville,184281,6495978,Tennessee
+Chattanooga,173778,6495978,Tennessee
+Houston,2195914,26448193,Texas
+San Antonio,1409019,26448193,Texas
+Dallas,1257676,26448193,Texas
+Austin,885400,26448193,Texas
+Fort Worth,792727,26448193,Texas
+El Paso,674433,26448193,Texas
+Salt Lake City,186440,2900872,Utah
+West Valley City,129480,2900872,Utah
+Provo,112488,2900872,Utah
+West Jordan,103712,2900872,Utah
+Burlington,42417,626630,Vermont
+Essex,19587,626630,Vermont
+South Burlington,17904,626630,Vermont
+Colchester,17067,626630,Vermont
+Virginia Beach,448479,826405,Virginia
+Norfolk,246139,826405,Virginia
+Chesapeake,230571,826405,Virginia
+Arlington,224906,826405,Virginia
+Seattle,668352,6971406,Washington
+Spokane,212052,6971406,Washington
+Tacoma,205159,6971406,Washington
+Vancouver,169294,6971406,Washington
+Charleston,51371,1854304,West Virginia
+Huntington,49138,1854304,West Virginia
+Parkersburg,31492,1854304,West Virginia
+Morganstown,29660,1854304,West Virginia
+Milwaukee,594833,5742713,Wisconsin
+Madison,233209,5742713,Wisconsin
+Green Bay,104057,5742713,Wisconsin
+Kenosha,99218,5742713,Wisconsin
+Cheyenne,60096,582658,Wyoming
+Casper,55988,582658,Wyoming
+Laramie,31312,582658,Wyoming
+Gillette,29389,582658,Wyoming
