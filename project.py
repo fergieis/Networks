@@ -52,15 +52,16 @@ for idx, visit in visits_dict.iteritems():
 		total_visits[idx] += dv[len(dv)-1]
 		state_visits[state] += dv[len(dv)-1]
 
-total_cand = 0;
-		
-for state in states:
+total_cand = ""
+
+
+
 	#winner take all	
-	total_cand += candidates[state] * (.05*state_visits[state]<.5)
+prob += lpSum(candidates[state] * (.5 + .15*state_visits[state]<.5 for state in states))
+	
 
 #objective function: max total candidates	
-prob += total_cand
-
+#prob += total_cand
 
 #subject to..
 for idx, visit in visits_dict.iteritems():
@@ -74,11 +75,13 @@ print("Optimal at:" + str(value(prob.objective)))
 #print optimal solution
 print("Solution:\n")
 
+prob.writeMPS("ProblemFormulation.mps")
+prob.writeLP("ProblemFormulation.lp")
 
-for v in prob.variables():
-	if v.varValue != 0:
-		msg = (v.name + "=" + str(v.varValue) + "\n")
-		print(msg)
+#for v in prob.variables():
+	#if v.varValue != 0:
+		#msg = (v.name + "=" + str(v.varValue))
+		#print(msg)
 
 
 
