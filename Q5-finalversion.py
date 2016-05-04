@@ -2,6 +2,9 @@
 #Question 5
 #MAJ Ferguson
 
+#/---------------------/
+#   Setup and Sets
+
 import numpy as np
 from gurobipy import *
 from math import sqrt
@@ -26,6 +29,9 @@ values = {1:0,2:3,3:5,4:1,5:2,6:4,7:0}
 npoints = range(1,len(points))
 possibilities = list(permutations(npoints,2))
 
+#/---------------------/
+#  Decision Variables
+
 #inclusion of each node (x) and arc (v) is a decision variable
 v ={}
 x={}
@@ -48,6 +54,7 @@ for A in possibilities:
 #not strictly necessary, but just to be sure
 d[(7,1)] = 0
 d[(1,7)] = 9999
+
 #this overrides the distance calc to not penalize a move to S
 #this allows for variable path lengths without messing everything up
 for i in xrange(2,7):
@@ -56,7 +63,13 @@ for i in xrange(2,7):
 #if you want a pretty look at the final distance matrix
 #pprint.pprint(d)
 
+#/-----------------------/
+#       Objective
+
 m.setObjective(quicksum(values[i]*x[i] for i in range(1,7)), GRB.MAXIMIZE)
+
+#/-----------------------/
+#      Constraints
 
 #node balance constraints
 for i in xrange(1,8):
@@ -67,18 +80,23 @@ for i in xrange(1,8):
 	else:	
 		m.addConstr(0 == quicksum(v[i,j]-v[j,i] for j in xrange(1,8)))
 
-#don't go back, since isomorphic to complete graph,
-# shortest path will never go through another point, even if co-linear (then will ==)
 for i in xrange(2,7):
+#don't go back, since isomorphic to complete graph,
+# shortest path will never go through another point, even if co-linear (then will ==)	
 	m.addConstr(x[i] == quicksum(v[j,i] for j in xrange(1,8)))
 	for j in xrange(2,7):
 		m.addConstr(0 == v[i,j]*v[j,i])
+
 
 #no auto-cycling
 m.addConstr(0 == quicksum(v[i,i] for i in xrange(1,7)))
 
 #can't go farther than 15k
 fuel = m.addConstr(max_dist >= quicksum(d[A]*v[A] for A in possibilities))
+
+
+#/--------------------/
+#  Solution, Results
 
 #set to 0 to mute gurobi output
 m.params.OutputFlag = 1
