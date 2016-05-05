@@ -14,7 +14,7 @@ m = Model("Q5")
 #first s is because non-CS types don't like indexing at 0
 points = ["S", "A", "B", "C", "D", "E", "F", "S"]
 
-max_dist = 15
+max_dist = 15 - .08
 
 #can construct these data structures using zip() and dict()
 #coords = {"A":(5,5),"B": (8,1), "C": (3,7),"D":(2,3), "E":(7,3),"F": (8,8)}
@@ -102,7 +102,7 @@ fuel = m.addConstr(max_dist >= quicksum(d[A]*v[A] for A in possibilities))
 m.params.OutputFlag = 1
 m.optimize()
 
-#print fuel.slack #0.072553361661 cutting it a little close, aren't we?
+print fuel.slack #0.072553361661 cutting it a little close, aren't we?
 
 sol=""
 for v in m.getVars():

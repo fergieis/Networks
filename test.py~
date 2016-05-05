@@ -1,0 +1,110 @@
+from __future__ import division
+from math import floor
+import pandas as pd
+import numpy as np
+from gurobipy import *
+#from pulp import *
+from datetime import date, datetime
+
+
+def date2t(curr_date):
+	start_date = date(2016, 2, 1) #Iowa Caucus
+	diff = datetime.utcfromtimestamp(curr_date)-start_date	
+	diff = 2 * diff.days + diff.seconds//43200,
+	return diff
+
+
+data = pd.read_csv('Cities.csv')
+
+states =[]
+cities = {}
+c2s = {}
+
+for key, s in data.groupby("State")['City']:
+	cities[key] = list(s)
+	states.append(key)
+
+for i, state in enumerate(states):
+	cities[i] = cities[state]
+
+city_list = data["City"]
+#cities=dict(zip(data["State"]
+
+city_pop = data["City Population"]
+state_pop = data["State Population"]
+
+#states = dict(zip(cities, data["State"]))
+
+#### NEED DELEGATE DATA IN DATA.CSV########
+#-------------------------------------------#
+delegates_wta = np.random.randint(3,90,len(states))
+delegates_per = np.random.randint(3,90,len(states))
+
+#Currently using start and end dates of elections, will likely
+# want to "back off" first election by a bit.
+#Maybe also need an indicator for party (R/D)?
+start_date = date(2016, 2, 1) #Iowa Caucus
+end_date = date(2016, 6, 8) #thru Jun 7 (+1), Jun 14 for DC for Democrats
+
+
+
+visits = pd.date_range(start_date, end_date, freq="12H")
+visit_index = range(len(visits))
+total_visits = [None] * len(visits)
+visits_dict = dict(zip(xrange(1,len(visits)+1), visits))
+T = len(visits)
+
+city_per = city_pop / state_pop
+city_per = dict(zip(city_list, city_per))
+
+print(city_per["Birmingham"])
+
+state_visits = dict(zip(states, np.zeros(len(states))))
+#delegates = dict(zip(states, delegates))
+
+m = Model("OPER617Project")
+#prob = pulp.LpProblem("OPER617Project", pulp.LpMaximize)
+
+v ={}
+I ={}
+mu={}
+poll={}
+
+for i,state in enumerate(states):
+	poll[i,0] = .4
+	for city in cities[state]:
+		I[i] = m.addVar(vtype=GRB.BINARY, name="Win-"+ str(state))		
+		for t in visits_dict:
+#NEEDS END DATES ADDED
+			poll[(i,t)] = m.addVar(lb=0, ub=1, vtype=GRB.CONTINUOUS, name=str(state)+"at_time_" +str(t))
+			try:			
+				mu[(i,t)] = max((50/(T-t)), 0)
+			except ZeroDivisionError:
+				mu[(i,t)] = 0
+#What do we want ON election day?
+			v[(city,t)] = m.addVar(vtype=GRB.BINARY, name=str(city)+", "+ str(state) + ":"+ str(t))
+	
+m.update()
+
+
+#deprecated z...
+#z={}
+#for s in states:
+#	z[s] = I[s]*delegate_wta[s] + floor(poll[s,T]*delegates_per[s]
+###add poll[s,end[state]]
+
+m.setObjective(quicksum(I[i]*delegates_wta[i] + poll[(i,T)]*delegates_per[i] for i,s in enumerate(states)), GRB.MAXIMIZE)
+#add floor function(?)
+
+for i,s in enumerate(states):
+	#indicator of whether we win a state	
+	diff = LinExpr(I[i] - poll[(i,T)])
+	m.addConstr(diff <= .5)
+	for t in visits_dict:
+		#polling can't exceed our 
+		diff = LinExpr(poll[(i,t-1)] - poll[(i,t)])		
+		m.addConstr(mu[(i,t)] * quicksum(city_per[city]* v[(city,t)] for city in cities[i]), GRB.EQUAL, diff)
+###add poll[s,end[state]]
+
+m.optimize()
+
