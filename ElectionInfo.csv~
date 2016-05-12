@@ -1,0 +1,54 @@
+State,Date,Type,NumDel,Method,WTADel,PerDel,QualThresh,WTA_Thresh,Winner's Rounding
+Arizona,March 22,primary,58,winner-take-all,58,0,0,0.5,0
+California,June 07,primary,172,hybrid,17,155,1,0.5,0
+Colorado,March 01,caucus,37,unbound*,0,37,0,1,0
+Delaware,April 26,primary,16,winner-take-all,16,0,0,0.5,0
+Florida,March 15,primary,99,winner-take-all,99,0,0,0.5,0
+Hawaii,March 08,caucus,19,proportional,0,19,0,1,1
+Illinois,March 15,primary,69,hybrid,6,63,1,0.5,0
+Indiana,May 03,primary,57,hybrid,5,52,1,0.5,0
+Iowa,Feburary 01,caucus,30,proportional,0,30,0,1,0
+Maryland,April 26,primary,38,hybrid,3,35,1,0.5,0
+Missouri,March 15,primary,52,hybrid,5,47,0.5,0.5,0
+Montana,June 07,primary,27,winner-take-all,27,0,0,0.5,0
+Nebraska,May 10,primary,36,winner-take-all,36,0,0,0.5,0
+Nevada,Feburary 23,caucus,30,proportional,0,30,0,1,0
+New Jersey,June 07,primary,51,winner-take-all,51,0,0,0.5,0
+North Carolina,March 15,primary,72,proportional,0,72,0,1,0
+North Dakota,April 01,caucus,28,unbound,0,28,0,1,0
+Northern Marianas,March 15,caucus,9,winner-take-all,9,0,0,0.5,0
+Ohio,March 15,primary,66,winner-take-all,66,0,0,0.5,0
+Pennsylvania,April 26,primary,71,hybrid*,7,64,1,0.5,
+South Carolina,Feburary 20,primary,50,hybrid,5,45,1,0.5,
+South Dakota,June 7,primary,29,winner-take-all,29,0,0,0.5,0
+Virgin Islands,March 10,caucus,9,directly elected,0,9,0,1,0
+Virginia,March 01,primary,49,proportional,0,49,0,1,0
+West Virginia,May 10,primary,34,hybrid,3,31,1,0.5,
+Wisconsin,April 05,primary,42,hybrid,4,38,1,0.5,
+Wyoming,March 01,caucus,29,unbound*,0,29,0,1,0
+Oregon,May 17,primary,28,proportional,0,28,0.0357,1,0
+Michigan,March 08,primary,59,hybrid,5,54,0.5,0.5,
+"Washington, DC",March 12,convention,19,proportional,0,19,0.15,0.5,0
+Alabama,March 01,primary,50,hybrid,5,45,1,0.5,
+Kansas,March 05,caucus,40,proportional,0,40,0.1,1,1
+Maine,March 05,caucus,23,proportional,0,23,0.1,0.5,1
+Minnesota,March 01,caucus,38,proportional,0,38,0.1,0.85,1
+New Hampshire,Feburary 09,primary,23,proportional,0,23,0.1,1,1
+Rhode Island,April 26,primary,19,proportional,0,19,0.1,1,0
+Alaska,March 01,caucus,28,proportional,0,28,0.13,1,1
+Arkansas,March 01,primary,40,hybrid,4,36,1,0.5,
+Mississippi,March 08,primary,40,proportional,0,40,0.15,0.5,0
+New Mexico,June 07,primary,24,proportional,0,24,0.15,1,0
+Oklahoma,March 01,primary,43,hybrid,4,39,0.5,0.5,
+Utah,March 22,caucus,40,hybrid,4,36,0.5,0.5,
+Connecticut,April 26,primary,28,hybrid,2,26,0.5,0.5,
+Georgia,March 01,primary,76,hybrid,7,69,0.5,0.5,
+Idaho,March 08,primary,32,hybrid,3,29,0.5,0.5,
+Louisiana,March 05,primary,46,proportional,0,46,0.2,1,0
+New York,April 19,primary,95,hybrid,9,86,0.5,0.5,
+Tennessee,March 01,primary,58,hybrid,5,53,0.67,0.5,
+Texas,March 01,primary,155,hybrid,15,140,0.5,0.5,
+Vermont,March 01,primary,16,hybrid,1,15,0.5,0.5,
+Washington,May 24,primary,44,proportional,0,44,0.2,0.5,0
+Kentucky,March 05,caucus,46,proportional,0,46,0.05,1,0
+Massachusetts,March 01,primary,42,proportional,0,42,0.05,1,1
